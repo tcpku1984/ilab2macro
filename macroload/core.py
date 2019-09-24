@@ -1,13 +1,14 @@
-from collections import namedtuple
+
 import attr
 
-from macroload import extract, process, config
-from typing import Dict,List, Any, NamedTuple, TextIO, Optional
+from macroload import extract, process, config, error
+from typing import Dict, List, Any
 from collections import UserList
 import datetime as dt
 
 import logging as l
-import pandas as pd
+
+from macroload.error import InvalidTestCode
 
 l.basicConfig(level = l.INFO)
 
@@ -29,11 +30,6 @@ class ValidatedSubjectRows(UserList):
         self.errors = errors
         self.unvalidated = []
 
-class InvalidTestCode(BaseException):
-    """
-    Indicates a test code was not present in the test map
-    """
-    pass
 
 def extract_validated_visit_tests(data:List[Dict[str,Any]], visit: SubjectVisitDetails, test_map:Dict[str, str])->ValidatedSubjectRows:
     """
@@ -50,7 +46,7 @@ def extract_validated_visit_tests(data:List[Dict[str,Any]], visit: SubjectVisitD
     for test_code, macro_field in test_map.items():
         try:
             validated_rows.append(_extract_validated_test_rows(subject_tests, test_code, test_map, visit))
-        except BaseException as ex:
+        except error.RowValidationError as ex:
             errors.append(ex)
 
     return ValidatedSubjectRows(validated_rows,errors)
@@ -65,8 +61,8 @@ def _extract_validated_test_rows(subject_tests, test_code, test_map, visit):
 
     try:
         validated_rows = extract.validate_rows(dated_tests)
-    except extract.NoResults:
-        raise extract.NoResults("Unable to find results for test code:" + str(test_code))
+    except error.NoResults:
+        raise error.NoResults("Unable to find results for test code:" + str(test_code))
 
     processed_row = process.create_processed_row(validated_rows, visit, test_map)
     return process.validate_row(processed_row)

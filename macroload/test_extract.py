@@ -1,4 +1,6 @@
 import pytest
+
+import macroload.error
 from macroload import extract
 import datetime as dt
 
@@ -92,13 +94,13 @@ def test_it_raises_exception_during_validation_if_values_are_different():
          "result": "0.06"},
     ])
 
-    with pytest.raises(extract.InconsistentResults):
+    with pytest.raises(macroload.error.InconsistentResults):
         extract.validate_rows(input_data)
 
 def test_it_raises_exception_during_validation_if_no_values():
     input_data = extract.DatedSubjectSpecificTests([])
 
-    with pytest.raises(extract.NoResults):
+    with pytest.raises(macroload.error.NoResults):
         extract.validate_rows(input_data)
 
 def test_it_returns_single_test_if_values_are_same():
@@ -130,3 +132,65 @@ def test_it_returns_single_test_if_single_row():
     obs_row = extract.validate_rows(input_data)
 
     assert exp_row == obs_row
+
+def test_it_returns_number_if_gt_sign_in_front():
+    input_data = extract.DatedSubjectSpecificTests([
+        {"study_id": "12345", "sample_collection_date_time": "02/03/2013", "local_test_code": "EOSAB",
+         "result": ">3.00"}
+    ])
+
+    exp_row = extract.ValidatedSubjectSpecificTest(
+        {"study_id": "12345", "sample_collection_date_time": "02/03/2013", "local_test_code": "EOSAB",
+         "result": ">3.00"}
+    )
+    obs_row = extract.validate_rows(input_data)
+
+    assert exp_row == obs_row
+
+def test_it_returns_number_if_lt_sign_in_front():
+    input_data = extract.DatedSubjectSpecificTests([
+        {"study_id": "12345", "sample_collection_date_time": "02/03/2013", "local_test_code": "EOSAB",
+         "result": "<0.04"}
+    ])
+
+    exp_row = extract.ValidatedSubjectSpecificTest(
+        {"study_id": "12345", "sample_collection_date_time": "02/03/2013", "local_test_code": "EOSAB",
+         "result": "<0.04"}
+    )
+    obs_row = extract.validate_rows(input_data)
+
+    assert exp_row == obs_row
+
+
+def test_it_returns_number_if_minus_sign_in_front():
+    input_data = extract.DatedSubjectSpecificTests([
+        {"study_id": "12345", "sample_collection_date_time": "02/03/2013", "local_test_code": "EOSAB",
+         "result": "-29.2"}
+    ])
+
+    exp_row = extract.ValidatedSubjectSpecificTest(
+        {"study_id": "12345", "sample_collection_date_time": "02/03/2013", "local_test_code": "EOSAB",
+         "result": "-29.2"}
+    )
+    obs_row = extract.validate_rows(input_data)
+
+    assert exp_row == obs_row
+
+def test_it_raises_exception_during_validation_if_text_value():
+    input_data = extract.DatedSubjectSpecificTests([
+        {"study_id": "12345", "sample_collection_date_time": "02/03/2013", "local_test_code": "EOSAB",
+         "result": "POS"}
+    ])
+
+    with pytest.raises(macroload.error.NonNumericResult):
+        extract.validate_rows(input_data)
+
+
+def test_it_raises_exception_during_validation_if_empty_value():
+    input_data = extract.DatedSubjectSpecificTests([
+        {"study_id": "12345", "sample_collection_date_time": "02/03/2013", "local_test_code": "EOSAB",
+         "result": ""}
+    ])
+
+    with pytest.raises(macroload.error.NonNumericResult):
+        extract.validate_rows(input_data)

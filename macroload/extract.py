@@ -1,7 +1,9 @@
 import datetime as dt
 from typing import List, Dict
 from collections import UserList, OrderedDict
-from macroload import config, core
+from macroload import config
+from macroload.error import InconsistentResults, NoResults, NonNumericResult
+
 
 class SubjectTests(UserList):
     """
@@ -33,17 +35,6 @@ class ValidatedSubjectSpecificTest(OrderedDict):
     """
     pass
 
-class InconsistentResults(BaseException):
-    """
-    Raised when two or more results of the same subject, date and test type do not match
-    """
-    pass
-
-class NoResults(BaseException):
-    """
-    Raised when no results for the subject, date and test type
-    """
-    pass
 
 def extract_subject_tests(data:List[Dict[str,str]], subject_id:str)->SubjectTests:
     """
@@ -98,6 +89,11 @@ def validate_rows(data:DatedSubjectSpecificTests)->ValidatedSubjectSpecificTest:
     if len(results.items())==0:
         raise NoResults()
 
+    row = data[0]
+
+    if not _is_number_or_prefixed_number(row[config.RESULT_FIELD]):
+        raise NonNumericResult("In result:" + str(data))
+
     return ValidatedSubjectSpecificTest(data[0])
 
 def _parse_date_field(row:Dict[str,str])->Dict[str,str]:
@@ -105,3 +101,18 @@ def _parse_date_field(row:Dict[str,str])->Dict[str,str]:
     new_row = row.copy()
     new_row[config.DATE_FIELD] = parsed_date.strftime(config.DATE_OUTPUT_FORMAT)
     return new_row
+
+def _is_number_or_prefixed_number(result:str):
+    if result is None:
+        return False
+
+    result = str(result)
+
+    if result.startswith(">") or result.startswith("<"):
+        result = result[1:]
+    try:
+        float(result)
+    except ValueError:
+        return False
+
+    return True

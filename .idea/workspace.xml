@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74e6a379-dd88-4aba-b129-ab51c632eea4" name="Default" comment="" />
+    <list default="true" id="74e6a379-dd88-4aba-b129-ab51c632eea4" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/macroload/error.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/macroload.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/macroload.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/macroload/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/macroload/core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/macroload/extract.py" beforeDir="false" afterPath="$PROJECT_DIR$/macroload/extract.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/macroload/process.py" beforeDir="false" afterPath="$PROJECT_DIR$/macroload/process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/macroload/test_core.py" beforeDir="false" afterPath="$PROJECT_DIR$/macroload/test_core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/macroload/test_extract.py" beforeDir="false" afterPath="$PROJECT_DIR$/macroload/test_extract.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/macroload/test_load.py" beforeDir="false" afterPath="$PROJECT_DIR$/macroload/test_load.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/macroload/test_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/macroload/test_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,178 +23,149 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/macroload$py_test_in_test_load_py.coverage" NAME="py.test in test_load.py Coverage Results" MODIFIED="1552552102063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/macroload$process.coverage" NAME="process Coverage Results" MODIFIED="1553094545287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/macroload$py_test_for_test_main_test_more_complex_extraction_returns_correct_file.coverage" NAME="py.test for test_main.test_more_complex_extraction_returns_correct_file Coverage Results" MODIFIED="1553255891259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/macroload$py_test_in_macroload.coverage" NAME="py.test in macroload Coverage Results" MODIFIED="1569317103827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/macroload$py_test_for_test_extract_test_it_returns_number_if_lt_sign_in_front.coverage" NAME="py.test for test_extract.test_it_returns_number_if_lt_sign_in_front Coverage Results" MODIFIED="1569312384079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/macroload$py_test_for_test_extract_test_it_extracts_specific_test_for_specific_study.coverage" NAME="py.test for test_extract.test_it_extracts_specific_test_for_specific_study Coverage Results" MODIFIED="1553090315409" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/macroload$py_test_for_test_extract_test_it_finds_specific_tests_on_supplied_date.coverage" NAME="py.test for test_extract.test_it_finds_specific_tests_on_supplied_date Coverage Results" MODIFIED="1553247364798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/macroload$py_test_for_test_core_test_extract_subject_visit_tests_works_with_no_errors.coverage" NAME="py.test for test_core.test_extract_subject_visit_tests_works_with_no_errors Coverage Results" MODIFIED="1553095699213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/macroload$py_test_for_test_process_test_create_output_row.coverage" NAME="py.test for test_process.test_create_output_row Coverage Results" MODIFIED="1553096656828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/macroload$py_test_for_test_process_test_validate_output_row_returns_validated_row.coverage" NAME="py.test for test_process.test_validate_output_row_returns_validated_row Coverage Results" MODIFIED="1553093836436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/macroload$py_test_in_test_core_py.coverage" NAME="py.test in test_core.py Coverage Results" MODIFIED="1553249699965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/macroload$py_test_for_test_extract_test_it_returns_empty_test_if_no_values.coverage" NAME="py.test for test_extract.test_it_returns_empty_test_if_no_values Coverage Results" MODIFIED="1553247353300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/macroload$py_test_in_test_process_py.coverage" NAME="py.test in test_process.py Coverage Results" MODIFIED="1553255230902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/macroload$py_test_in_test_extract_py.coverage" NAME="py.test in test_extract.py Coverage Results" MODIFIED="1553249925123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/macroload$py_test_for_test_process_test_validate_output_row_raises_exception_if_no_code.coverage" NAME="py.test for test_process.test_validate_output_row_raises_exception_if_no_code Coverage Results" MODIFIED="1553093643116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/macroload$py_test_for_test_extract_test_it_parses_dates_and_finds_tests_on_specific_date.coverage" NAME="py.test for test_extract.test_it_parses_dates_and_finds_tests_on_specific_date Coverage Results" MODIFIED="1553093555354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/macroload$py_test_for_test_extract_test_it_returns_single_test_if_values_are_same.coverage" NAME="py.test for test_extract.test_it_returns_single_test_if_values_are_same Coverage Results" MODIFIED="1553091834963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/macroload$py_test_for_test_extract_test_it_finds_specific_test_on_supplied_date.coverage" NAME="py.test for test_extract.test_it_finds_specific_test_on_supplied_date Coverage Results" MODIFIED="1553247043888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/macroload$py_test_for_test_extract_test_it_extracts_all_tests_for_specific_study.coverage" NAME="py.test for test_extract.test_it_extracts_all_tests_for_specific_study Coverage Results" MODIFIED="1553090133354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
     <SUITE FILE_PATH="coverage/macroload$test_extract.coverage" NAME="test_extract Coverage Results" MODIFIED="1552466229706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/macroload$py_test_in_test_extract_py.coverage" NAME="py.test in macroload Coverage Results" MODIFIED="1552492415195" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/macroload$py_test_for_test_core_test_test_map_returns_expected_test_code.coverage" NAME="py.test for test_core.test_test_map_returns_expected_test_code Coverage Results" MODIFIED="1553255857657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/macroload$py_test_in_test_main_py.coverage" NAME="py.test in test_main.py Coverage Results" MODIFIED="1553251199111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/macroload$py_test_for_test_extract_test_it_raises_exception_during_validation_if_text_value.coverage" NAME="py.test for test_extract.test_it_raises_exception_during_validation_if_text_value Coverage Results" MODIFIED="1569312911080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/macroload$py_test_for_test_extract_test_it_raises_exception_during_validation_if_values_are_different.coverage" NAME="py.test for test_extract.test_it_raises_exception_during_validation_if_values_are_different Coverage Results" MODIFIED="1553247058052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/macroload$py_test_for_test_extract_test_it_returns_single_test_if_single_row.coverage" NAME="py.test for test_extract.test_it_returns_single_test_if_single_row Coverage Results" MODIFIED="1553092092455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
     <SUITE FILE_PATH="coverage/macroload$load.coverage" NAME="load Coverage Results" MODIFIED="1552551507839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/macroload$py_test_in_macroload.coverage" NAME="py.test in macroload Coverage Results" MODIFIED="1552552218395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/macroload$py_test_in_test_load_py.coverage" NAME="py.test in test_load.py Coverage Results" MODIFIED="1552552102063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/macroload$py_test_for_test_extract_test_it_returns_number_if_gt_sign_in_front.coverage" NAME="py.test for test_extract.test_it_returns_number_if_gt_sign_in_front Coverage Results" MODIFIED="1569312354721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/macroload$py_test_for_test_extract_test_it_raises_exception_during_validation_if_no_values.coverage" NAME="py.test for test_extract.test_it_raises_exception_during_validation_if_no_values Coverage Results" MODIFIED="1553090473483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.5878023">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="core.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/macroload/core.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
-                  <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-                  <folding>
-                    <element signature="e#0#34#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/macroload/__init__.py">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/README.md">
-              <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-                <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="399">
-                    <caret line="31" column="93" selection-start-line="31" selection-start-column="93" selection-end-line="31" selection-end-column="93" />
-                  </first_editor>
-                  <second_editor />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="visits.csv" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/macroload/test/visits.csv">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="55" selection-end-column="55" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/macroload/config.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="19" column="28" selection-start-line="13" selection-end-line="19" selection-end-column="28" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="extract.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/macroload/extract.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1290">
-                  <caret line="86" column="112" selection-start-line="86" selection-start-column="112" selection-end-line="86" selection-end-column="112" />
-                  <folding>
-                    <element signature="e#0#21#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="process.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/macroload/process.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="645">
-                  <caret line="43" column="59" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="59" />
-                  <folding>
-                    <element signature="e#0#43#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="load.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/macroload/load.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="327">
-                  <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="test_load.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/macroload/test_load.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="148">
-                  <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-                  <folding>
-                    <element signature="e#0#31#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="test_extract.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/macroload/test_extract.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="62" column="27" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
-                  <folding>
-                    <element signature="e#0#13#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="generate-macro-file.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/generate-macro-file.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="output_file.csv" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/output_file.csv">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" selection-start-line="4" selection-end-line="4" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/requirements.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" selection-start-line="2" selection-end-line="2" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="test_data.csv" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/macroload/test/test_data.csv">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="test_set.csv" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/macroload/test/test_set.csv">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="core.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/macroload/core.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+              <folding>
+                <element signature="e#1#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="error.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/macroload/error.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="461">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="extract.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/macroload/extract.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="load.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/macroload/load.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_process.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/macroload/test_process.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-850">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="process.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/macroload/process.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="37" column="67" selection-start-line="37" selection-start-column="67" selection-end-line="37" selection-end-column="67" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mypy.ini" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mypy.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_load.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/macroload/test_load.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="94">
+              <caret line="27" column="100" selection-start-line="27" selection-start-column="100" selection-end-line="27" selection-end-column="100" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_extract.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/macroload/test_extract.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="167" column="27" selection-start-line="167" selection-start-column="27" selection-end-line="167" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_core.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/macroload/test_core.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1026">
+              <caret line="89" column="58" selection-start-line="89" selection-start-column="58" selection-end-line="89" selection-end-column="58" />
+              <folding>
+                <element signature="e#1#52#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -203,6 +187,10 @@
       <find>Tuple</find>
       <find>subject</find>
       <find>prow</find>
+      <find>config</find>
+      <find>error..</find>
+      <find>macroload.error.</find>
+      <find>InvalidField</find>
     </findStrings>
     <replaceStrings>
       <replace>,</replace>
@@ -210,7 +198,11 @@
       <replace>study_id</replace>
       <replace>validataed</replace>
       <replace>&quot;02/03/2013&quot;</replace>
+      <replace>error.</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -219,7 +211,6 @@
         <option value="$PROJECT_DIR$/extract.py" />
         <option value="$PROJECT_DIR$/test_extract.py" />
         <option value="$PROJECT_DIR$/data.py" />
-        <option value="$PROJECT_DIR$/macroload/test_extract.py" />
         <option value="$PROJECT_DIR$/macroload/macroload.py" />
         <option value="$PROJECT_DIR$/visits.csv" />
         <option value="$PROJECT_DIR$/macroload/__init__.py" />
@@ -229,17 +220,20 @@
         <option value="$PROJECT_DIR$/test_set.csv" />
         <option value="$PROJECT_DIR$/macroload/test/test_load.py" />
         <option value="$PROJECT_DIR$/load.py" />
-        <option value="$PROJECT_DIR$/macroload/test_core.py" />
         <option value="$PROJECT_DIR$/macroload/test_process.py" />
-        <option value="$PROJECT_DIR$/macroload/core.py" />
         <option value="$PROJECT_DIR$/macroload/config.py" />
-        <option value="$PROJECT_DIR$/macroload/process.py" />
-        <option value="$PROJECT_DIR$/macroload/extract.py" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/generate-macro-file.py" />
         <option value="$PROJECT_DIR$/macroload/load.py" />
-        <option value="$PROJECT_DIR$/macroload/test_load.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/macroload/core.py" />
+        <option value="$PROJECT_DIR$/macroload/test_core.py" />
+        <option value="$PROJECT_DIR$/macroload/error.py" />
+        <option value="$PROJECT_DIR$/macroload/extract.py" />
+        <option value="$PROJECT_DIR$/macroload/test_extract.py" />
+        <option value="$PROJECT_DIR$/macroload/test_load.py" />
+        <option value="$PROJECT_DIR$/macroload/process.py" />
+        <option value="$PROJECT_DIR$/mypy.ini" />
       </list>
     </option>
   </component>
@@ -252,12 +246,13 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="404" />
-    <option name="y" value="-1057" />
-    <option name="width" value="1920" />
-    <option name="height" value="1025" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -320,25 +315,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Python tests.py.test in macroload">
-    <configuration name="load" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="macroload" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/generate-macro-file.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
       <module name="macroload" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -353,6 +329,51 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/test_extract.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
+    </configuration>
+    <configuration name="py.test for test_extract.test_it_raises_exception_during_validation_if_text_value" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="macroload" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/macroload" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_extract.test_it_raises_exception_during_validation_if_text_value&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <configuration name="py.test for test_extract.test_it_returns_number_if_gt_sign_in_front" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="macroload" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/macroload" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_extract.test_it_returns_number_if_gt_sign_in_front&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <configuration name="py.test for test_extract.test_it_returns_number_if_lt_sign_in_front" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="macroload" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/macroload" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_extract.test_it_returns_number_if_lt_sign_in_front&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
     <configuration name="py.test in macroload" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="macroload" />
@@ -385,15 +406,19 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list>
-      <item itemvalue="Python.load" />
       <item itemvalue="Python tests.py.test in macroload" />
       <item itemvalue="Python tests.py.test in test_load.py" />
+      <item itemvalue="Python tests.py.test for test_extract.test_it_returns_number_if_gt_sign_in_front" />
+      <item itemvalue="Python tests.py.test for test_extract.test_it_returns_number_if_lt_sign_in_front" />
+      <item itemvalue="Python tests.py.test for test_extract.test_it_raises_exception_during_validation_if_text_value" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.py.test in macroload" />
+        <item itemvalue="Python tests.py.test for test_extract.test_it_raises_exception_during_validation_if_text_value" />
+        <item itemvalue="Python tests.py.test for test_extract.test_it_returns_number_if_lt_sign_in_front" />
+        <item itemvalue="Python tests.py.test for test_extract.test_it_returns_number_if_gt_sign_in_front" />
         <item itemvalue="Python tests.py.test in test_load.py" />
-        <item itemvalue="Python.load" />
       </list>
     </recent_temporary>
   </component>
@@ -411,63 +436,63 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_in_test_load_py - 2019.03.14 at 08h 25m 31s.xml">
-      <configuration name="py.test in test_load.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_load_py - 2019.03.14 at 08h 25m 38s.xml">
-      <configuration name="py.test in test_load.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_load_py - 2019.03.14 at 08h 25m 48s.xml">
-      <configuration name="py.test in test_load.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_load_py - 2019.03.14 at 08h 27m 27s.xml">
-      <configuration name="py.test in test_load.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_load_py - 2019.03.14 at 08h 27m 32s.xml">
-      <configuration name="py.test in test_load.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_load_py - 2019.03.14 at 08h 28m 16s.xml">
-      <configuration name="py.test in test_load.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_load_py - 2019.03.14 at 08h 28m 20s.xml">
-      <configuration name="py.test in test_load.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_load_py - 2019.03.14 at 08h 28m 25s.xml">
-      <configuration name="py.test in test_load.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_macroload - 2019.03.14 at 08h 28m 56s.xml">
+    <history-entry file="py_test_in_macroload - 2019.09.24 at 10h 06m 50s.xml">
       <configuration name="py.test in macroload" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_in_macroload - 2019.03.14 at 08h 30m 22s.xml">
+    <history-entry file="py_test_in_macroload - 2019.09.24 at 10h 07m 10s.xml">
+      <configuration name="py.test in macroload" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_macroload - 2019.09.24 at 10h 07m 42s.xml">
+      <configuration name="py.test in macroload" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_macroload - 2019.09.24 at 10h 12m 20s.xml">
+      <configuration name="py.test in macroload" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_macroload - 2019.09.24 at 10h 12m 33s.xml">
+      <configuration name="py.test in macroload" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_macroload - 2019.09.24 at 10h 14m 34s.xml">
+      <configuration name="py.test in macroload" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_macroload - 2019.09.24 at 10h 17m 23s.xml">
+      <configuration name="py.test in macroload" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_macroload - 2019.09.24 at 10h 18m 09s.xml">
+      <configuration name="py.test in macroload" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_macroload - 2019.09.24 at 10h 18m 53s.xml">
+      <configuration name="py.test in macroload" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_macroload - 2019.09.24 at 10h 25m 22s.xml">
       <configuration name="py.test in macroload" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="404" y="-1057" width="1920" height="1025" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="right" id="PlantUML" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31861198" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31808943" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="7" visible="true" weight="0.32436708" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21875" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3045388" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32825205" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995657" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39939025" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="PlantUML" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -478,75 +503,29 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/macroload/test_core.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/macroload/extract.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="86" column="112" selection-start-line="86" selection-start-column="112" selection-end-line="86" selection-end-column="112" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/macroload/process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="43" column="59" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/macroload/load.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/macroload/test_load.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/macroload/test_extract.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="62" column="27" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md" />
     <entry file="file://$PROJECT_DIR$/generate-macro-file.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -569,13 +548,10 @@
         <state relative-caret-position="855">
           <caret line="66" column="11" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="11" />
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#1#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/macroload/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/macroload/macroload.py" />
     <entry file="file://$PROJECT_DIR$/macroload/test_process.py">
@@ -609,9 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1050">
           <caret line="72" column="35" selection-start-line="72" selection-start-column="35" selection-end-line="72" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -619,9 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1545">
           <caret line="106" column="40" selection-start-line="106" selection-start-column="40" selection-end-line="106" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -647,77 +617,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.py" />
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.1/python_stubs/-321037632/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="3576" column="8" selection-start-line="3576" selection-start-column="8" selection-end-line="3576" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/pandas/io/parsers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-403">
-          <caret line="588" column="24" selection-start-line="588" selection-start-column="17" selection-end-line="588" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/pandas/core/common.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="330" selection-start-line="330" selection-end-line="330" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.1/python_stubs/-321037632/builtins.py" />
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/pandas/io/parsers.py" />
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/pandas/core/common.py" />
     <entry file="file://$PROJECT_DIR$/macroload/data.py" />
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/pandas/core/generic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="1820" selection-start-line="1820" selection-end-line="1820" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/pandas/core/frame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-719">
-          <caret line="1557" column="8" selection-start-line="1557" selection-start-column="8" selection-end-line="1557" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/pandas/core/dtypes/common.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="740" selection-start-line="740" selection-end-line="740" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/pandas/core/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="1125" selection-start-line="1125" selection-end-line="1125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/pandas/core/series.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="867" selection-start-line="867" selection-end-line="867" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/pandas/core/indexes/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3659" selection-start-line="3659" selection-end-line="3659" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/collections/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="70" column="6" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/pandas/core/generic.py" />
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/pandas/core/frame.py" />
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/pandas/core/dtypes/common.py" />
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/pandas/core/base.py" />
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/pandas/core/series.py" />
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/pandas/core/indexes/base.py" />
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/collections/__init__.py" />
     <entry file="file://$PROJECT_DIR$/macroload/test/test_data.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -725,37 +635,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/macroload/test_process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="74" column="33" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/macroload/test_core.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="51" column="69" selection-end-line="106" selection-end-column="71" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/macroload/macroload.py" />
-    <entry file="file://$PROJECT_DIR$/macroload/core.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/macroload/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/macroload/test/visits.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -770,106 +650,152 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/macroload/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="28" selection-start-line="13" selection-end-line="19" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/macroload/extract.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1290">
-          <caret line="86" column="112" selection-start-line="86" selection-start-column="112" selection-end-line="86" selection-end-column="112" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/macroload/process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="59" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/macroload/test_extract.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="62" column="27" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/click/decorators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="155" column="4" selection-start-line="155" selection-start-column="4" selection-end-line="155" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output_file.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generate-macro-file.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/macroload/load.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/macroload/test_load.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/click/decorators.py" />
+    <entry file="file://$PROJECT_DIR$/output_file.csv" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="text-editor">
         <state>
           <caret column="1" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="399">
-            <caret line="31" column="93" selection-start-line="31" selection-start-column="93" selection-end-line="31" selection-end-column="93" />
-          </first_editor>
-          <second_editor />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generate-macro-file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/macroload.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/macroload/test/test2/output_file.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/venv/macroload/Lib/site-packages/_pytest/python.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="169" selection-start-line="169" selection-end-line="169" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda3/Lib/_collections_abc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="881" selection-start-line="881" selection-end-line="881" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/macroload/core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+          <folding>
+            <element signature="e#1#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/macroload/error.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/macroload/load.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="37" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/macroload/extract.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/macroload/test_extract.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="167" column="27" selection-start-line="167" selection-start-column="27" selection-end-line="167" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/macroload/test_process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-850">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/macroload/test_core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="89" column="58" selection-start-line="89" selection-start-column="58" selection-end-line="89" selection-end-column="58" />
+          <folding>
+            <element signature="e#1#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/macroload/test_load.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="27" column="100" selection-start-line="27" selection-start-column="100" selection-end-line="27" selection-end-column="100" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/macroload/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/macroload/process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="37" column="67" selection-start-line="37" selection-start-column="67" selection-end-line="37" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mypy.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>

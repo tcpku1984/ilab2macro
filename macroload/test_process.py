@@ -1,3 +1,4 @@
+import macroload.error
 from macroload import process, config, extract, core
 import datetime as dt
 import pytest
@@ -47,7 +48,7 @@ def test_validate_output_row_raises_exception_if_no_result():
         "Question Cycle": None
     })
 
-    with pytest.raises(process.InvalidField):
+    with pytest.raises(macroload.error.NotNoneableField):
         process.validate_row(process.ProcessedRow(row))
 
 def test_validate_output_row_raises_exception_if_no_code():
@@ -63,7 +64,7 @@ def test_validate_output_row_raises_exception_if_no_code():
         "Question Cycle": 0.06
     })
 
-    with pytest.raises(process.InvalidField):
+    with pytest.raises(macroload.error.NotNoneableField):
         process.validate_row(process.ProcessedRow(row))
 
 def test_validate_output_row_returns_validated_row():

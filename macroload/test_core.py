@@ -1,4 +1,4 @@
-from macroload import core, process, extract
+from macroload import core, error
 import datetime as dt
 import logging as l
 from collections import OrderedDict
@@ -42,7 +42,7 @@ def test_extract_subject_visit_tests_works_with_no_errors():
 
 def test_extract_validated_visit_tests_handles_invalid_field():
     test_data2 = deepcopy(test_data)
-    test_data2[3]["result"]=None
+    test_data2[3]["result"] = None
 
     visit = core.SubjectVisitDetails(study_id="12345", visit_date=dt.date(2018, 3, 2), visit_no="1")
 
@@ -55,7 +55,7 @@ def test_extract_validated_visit_tests_handles_invalid_field():
     assert dict(obs_tests.data[0]) == dict(exp_tests[0])
     assert len(obs_tests.data) == 1
     assert len(obs_tests.errors) == 1
-    assert isinstance(obs_tests.errors[0],process.InvalidField)
+    assert isinstance(obs_tests.errors[0], error.NonNumericResult)
 
 def test_extract_validated_visit_tests_handles_inconsistent_results():
     test_data3 = deepcopy(test_data)
@@ -71,7 +71,7 @@ def test_extract_validated_visit_tests_handles_inconsistent_results():
     assert len(obs_tests.data) == 1
 
     assert len(obs_tests.errors) == 1
-    assert isinstance(obs_tests.errors[0],extract.InconsistentResults)
+    assert isinstance(obs_tests.errors[0], error.InconsistentResults)
 
 def test_extract_validated_visit_handles_no_test_code():
     test_data3 = deepcopy(test_data)
@@ -87,7 +87,7 @@ def test_extract_validated_visit_handles_no_test_code():
     assert len(obs_tests.data) == 1
 
     assert len(obs_tests.errors) == 1
-    assert isinstance(obs_tests.errors[0],core.InvalidTestCode)
+    assert isinstance(obs_tests.errors[0], error.InvalidTestCode)
 
 def test_extract_validated_visit_handles_no_test_code_and_inconsistent_result():
     test_data3 = deepcopy(test_data)
@@ -103,5 +103,5 @@ def test_extract_validated_visit_handles_no_test_code_and_inconsistent_result():
     assert len(obs_tests.data) == 0
 
     assert len(obs_tests.errors) == 2
-    assert isinstance(obs_tests.errors[0],core.InvalidTestCode)
-    assert isinstance(obs_tests.errors[1], extract.InconsistentResults)
+    assert isinstance(obs_tests.errors[0], error.InvalidTestCode)
+    assert isinstance(obs_tests.errors[1], error.InconsistentResults)

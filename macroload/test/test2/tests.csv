@@ -1,0 +1,70 @@
+test_code,test_title,var_code,var_title
+TIGE,Total IgE,IgE,Total IgE
+D1,D.pteronissunus IgE,IgE_derm,D.pteronissunus IgE
+E1,Cat dander IgE,IgE_cat,Cat dander IgE
+E5,Dog danger IgE,IgE_dog,Dog danger IgE
+M3,Aspergillus fumigatus IgE,IgE_asp,Aspergillus fumigatus IgE
+G6,Timothy grass IgE,IgE_grass,Timothy grass IgE
+ASPP,IgG precipitins to aspergillus,IgG,IgG precipitins to aspergillus
+NA,Sodium,na,Sodium (mmol/L)
+K,Potassium,k,Potassium  (mmol/L)
+UREA,Urea,urea,Urea  (mmol/L)
+CREA,Creatinine,creat,Creatinine  (umol/l)
+GFR,eGFR,egfrmdrd,eGFR (mL/min)
+CRP,C-Reactive Protein,crp,C-Reactive Protein
+CRPD,C-Reactive Protein,crp,C-Reactive Protein
+CRPI,C-Reactive Protein,crp,C-Reactive Protein
+ALT,Alanine transaminase,alt,Alanine transaminase U/L
+BILI,Total bilirubin,bil,Total bilirubin
+ALB,Albumin,alb,Albumin (g/L)
+CALB,Albumin,alb,Albumin (g/L)
+ACA,Adjusted calcium,calc,Adjusted calcium
+PHOS,Inorganic phosphate,phos,Inorganic phosphate
+ALP,Aklaline phosphatase,alp,Alkaline Phosphatase (ALP) (iu/L)
+CWBC,White cell count,wbc,White cell count
+WBC,White cell count,wbc,White cell count
+RBC,Red blood count,rbc,Red blood count
+HB,Haemoglobin,hb,Haemoglobin
+CHB,Haemoglobin,hb,Haemoglobin
+CHCT,Haematocrit,haematocrit,Haematocrit
+HCT,Haematocrit,haematocrit,Haematocrit
+HCTL,Haematocrit,haematocrit,Haematocrit
+CMCV,Mean cell volume,mcv,Mean cell volume
+MCV,Mean cell volume,mcv,Mean cell volume
+MCH,Mean cell haemoglobin,mch,Mean cell haemoglobin
+PLT,Platelet count,platelet,Platelet count
+CPLT,Platelet count,platelet,Platelet count
+NEU,Neutrophil count,neutrophil,Neutrophil count
+NEUAB,Neutrophil count,neutrophil,Neutrophil count
+LYMAB,Total lymphocyte count,lymphocyte,Total lymphocyte count
+LYMPH,Total lymphocyte count,lymphocyte,Total lymphocyte count
+MONO,Monocyte count,monocyte,Monocyte count
+MONAB,Monocyte count,monocyte,Monocyte count
+EOSAB,Eosinophil count,eosinophil,Eosinophil count
+EOS,Eosinophil count,eosinophil,Eosinophil count
+BASAB,Basophil count,basophil ,Basophil count
+BASO,Basophil count,basophil ,Basophil count
+NRBC,Nucleated red blood cells,nrbc,Nucleated red blood cells
+NRBCAD,Nucleated red blood cells,nrbc,Nucleated red blood cells
+NRBCXE,Nucleated red blood cells,nrbc,Nucleated red blood cells
+A1C,HbA1c,aic,HbA1c %
+NA1C,HbA1c,aic,HbA1c %
+CHOL,Cholesterol,chol,"Cholesterol
+(mmol/L)"
+TRIG,Triglycerides ,"trigs
+","Triglycerides 
+(mmol/L)"
+NTRIG,Triglycerides ,"trigs
+","Triglycerides
+(mmol/L)"
+NHDL,HDL Cholesterol,"hdl
+","HDL Cholesterol 
+(mmol/L)"
+SCHOL,Cholesterol,chol,"Cholesterol
+(mmol/L)"
+THDL,Total Chol: HDL ratio,chol_hdl_ratio,Total cholesterol:HDL ratio
+NLDL,LDL Cholesterol,ldl,"LDL Cholesterol
+(mmol/L)"
+PROBNP,NT-proBNP,bnp,NT-proBNP
+KPBMP,NT-proBNP,bnp,NT-proBNP
+KPBNP,NT-proBNP,bnp,NT-proBNP
