@@ -22,5 +22,10 @@ jobs:
     -name: Test with pytest
      run: |
              pip install pytest
-             pytest
+             pytest .
+
+    -name: Check with mypy
+     run: |
+             pip install mypy
+             mypy .
 
