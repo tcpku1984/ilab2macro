@@ -1,7 +1,10 @@
+name: main
+
 on: [push]
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 4
@@ -10,20 +13,18 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Setup up Python ${{ matrix.python-version }}
+    - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v1
       with:
-        python-version: ${{ matrix.python_version }}
-    
+        python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
+        python -m pip install --upgrade pip
         pip install -r requirements.txt
-             
     - name: Test with pytest
       run: |
         pip install pytest
-        pytest .
-
+        pytest
     - name: Check with mypy
       run: |
         pip install mypy
