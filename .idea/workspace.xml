@@ -2,45 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74e6a379-dd88-4aba-b129-ab51c632eea4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.flake8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2macro/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2macro/core.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2macro/data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2macro/result.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2macro/test/test_data.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2macro/test/test_set.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2macro/test/visits.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lab2macro/test_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/macroload.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.pytest_cache/v/cache/nodeids" beforeDir="false" afterPath="$PROJECT_DIR$/.pytest_cache/v/cache/nodeids" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generate-macro-file.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/macroload/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2macro/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macroload/config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/macroload/core.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/macroload/error.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2macro/error.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macroload/extract.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2macro/extract.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macroload/load.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2macro/load.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macroload/process.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2macro/process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macroload/test/test2/data.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/macroload/test/test2/full_data.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/macroload/test/test2/full_visits.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/macroload/test/test2/ilab_data.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/macroload/test/test2/output_file.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/macroload/test/test2/tests.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/macroload/test/test2/visits.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/macroload/test/test_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/lab2macro/test/test_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macroload/test/test_data.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/macroload/test/test_set.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/macroload/test/visits.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/macroload/test_core.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2macro/test_core.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macroload/test_extract.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2macro/test_extract.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macroload/test_load.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2macro/test_load.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/macroload/test_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2macro/test_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +59,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab2macro/test_data.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="429">
@@ -105,6 +67,15 @@
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.github/workflows/main.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -276,11 +247,13 @@
         <option value="$PROJECT_DIR$/lab2macro/core.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.github/workflows/main.yaml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="453" />
+    <option name="y" value="-1033" />
     <option name="width" value="1680" />
     <option name="height" value="989" />
   </component>
@@ -297,6 +270,17 @@
             <path>
               <item name="lab2macro" type="b2602c69:ProjectViewProjectNode" />
               <item name="lab2macro" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lab2macro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lab2macro" type="462c0819:PsiDirectoryNode" />
+              <item name=".github" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lab2macro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lab2macro" type="462c0819:PsiDirectoryNode" />
+              <item name=".github" type="462c0819:PsiDirectoryNode" />
+              <item name="workflows" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lab2macro" type="b2602c69:ProjectViewProjectNode" />
@@ -589,7 +573,7 @@
       <option name="presentableId" value="Default" />
       <updated>1552464969888</updated>
       <workItem from="1569922213346" duration="9219000" />
-      <workItem from="1569931529516" duration="388000" />
+      <workItem from="1569931529516" duration="708000" />
     </task>
     <servers />
   </component>
@@ -626,18 +610,18 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9607000" />
+    <option name="totallyTimeSpent" value="9927000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="989" extended-state="6" />
+    <frame x="453" y="-1033" width="1680" height="989" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21785714" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21785714" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3267974" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33333334" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33333334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39869282" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -944,6 +928,13 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.github/workflows/main.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
         </state>
       </provider>
     </entry>
