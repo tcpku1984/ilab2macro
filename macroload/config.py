@@ -11,11 +11,15 @@ COMMON_OUTPUT_VALUES = OrderedDict([
     ("eForm Code","frm_BloodRes")
 ])
 
-DATE_FIELD = "sample_collection_date_time"
+RESULT_DATE_FIELD = "sample_collection_date_time"
 RESULT_DATE_FORMAT = "%Y-%m-%d %H:%M:%S"
 RESULT_FIELD = "result"
-TEST_CODE_FIELD="local_test_code"
-STUDY_ID_FIELD="study_id"
-DATE_OUTPUT_FORMAT="%d/%m/%Y"
-VISIT_DATE_FORMAT="%d-%b-%y"
+RESULT_TEST_CODE_FIELD= "local_test_code"
+RESULT_STUDY_ID_FIELD= "study_id"
 
+VISIT_DATE_FORMAT="%d-%b-%y"
+VISIT_DATE_FIELD='Visit date'
+VISIT_STUDY_NO_FIELD = 'Screening Number'
+VISIT_NO_FIELD = 'Visit number'
+
+OUTPUT_DATE_FORMAT="%d/%m/%Y"

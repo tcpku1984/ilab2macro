@@ -19,34 +19,33 @@ class ValidatedRow(OrderedDict):
     pass
 
 
-def create_processed_row(data:extract.ValidatedSubjectSpecificTest, visit: "core.SubjectVisitDetails", field_map:Dict[str,str])->ProcessedRow:
+def create_processed_row(data:extract.BaseValidatedTest, visit: "core.SubjectVisitDetails", test_info: "core.TestInfo")->ProcessedRow:
     """
     Creates processed row by amalgamating the visit info, the validated test and the config.COMMON_OUTPUT_VALUES
     :param data:
     :param visit:
-    :param field_map:
+    :param test_map:
     :return:
     """
-    init_data = config.COMMON_OUTPUT_VALUES.copy()
-    test_code = data.get(config.TEST_CODE_FIELD)
-    init_data.update(OrderedDict([  #type: ignore
-        ("Subject Label", visit.study_id),
-        ("Visit Code", visit.visit_no),
-        ("Visit Cycle Number", "1"),
-        ("Visit Date", visit.visit_date.strftime(config.DATE_OUTPUT_FORMAT)),
-        ("eForm Code", "frm_BloodRes"),
-        ("Question Code", field_map.get(test_code)),  #type: ignore
-        ("Question Cycle", data.get(config.RESULT_FIELD))
-    ]))
+    init_data = config.INITIAL_ROW.copy()
+    test_code = data.test_code
+    init_data.update({
+        "Subject Label": visit.study_id,
+        "Visit Code": visit.visit_no,
+        "Visit Date": visit.visit_date.strftime(config.DATE_OUTPUT_FORMAT),
+        "Question Code": test_info.macro_field,
+        "Question Value": data.result,
+        "Unobtainable status":data.unobtainable_status
+    })
     return ProcessedRow(init_data)
 
-def validate_row(row:ProcessedRow)->ValidatedRow:
+def validate_required_fields(row:ProcessedRow)->ValidatedRow:
     """
     Validates row by checking for None values in key fields etc.
     :param row:
     :return:
     """
-    for x in ["Question Code", "Visit Date", "Question Cycle"]:
+    for x in ["Question Code", "Visit Date", "Question Cycle","Question Value","Subject ID","Visit Code"]:
         if row.get(x) is None:
             raise NotNoneableField("'" + x + "' cannot be none")
 

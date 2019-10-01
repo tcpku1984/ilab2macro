@@ -35,3 +35,9 @@ class InvalidTestCode(RowValidationError):
     Indicates a test code was not present in the test map
     """
     pass
+
+class NumberOutOfRange(RowValidationError):
+    """
+    Raised when a number is less than minimum or more than minimum allowed result.
+    """
+    pass

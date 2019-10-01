@@ -1,0 +1,4 @@
+study_id	sample_collection_date_time	local_test_code	result
+SN001	2018-10-11 12:00:00	EOSAB	0.03
+SN001	2018-10-11 12:00:00	NEU	0.05
+SN001	2018-10-11 12:00:00	TIGE	1000

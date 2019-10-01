@@ -2,78 +2,71 @@ import datetime as dt
 from typing import List, Dict
 from collections import UserList, OrderedDict
 from macroload import config
-from macroload.error import InconsistentResults, NoResults, NonNumericResult
-
 
 class SubjectTests(UserList):
     """
     All tests for a subject
     """
-    pass
+    def __init__(self, initlist:List, subject_id:str):
+        super().__init__(initlist)
+        self.subject_id = subject_id
 
-class SubjectSpecificTests(UserList):
-    """
-    All results for a specific test and subject
-    """
-    pass
+    @staticmethod
+    def extract_for_subject(data, subject_id:str)->"SubjectTests":
+        """
+        Extract all rows which match the supplied subject ID
+        :param data:
+        :param subject_id:
+        :return:
+        """
+        return SubjectTests(list(filter(lambda x: x[config.RESULT_STUDY_ID_FIELD] == subject_id, data)), subject_id)
 
-class ParsedSubjectSpecificTests(UserList):
-    """
-    All results for a specific test and subject which have had their test date parsed
-    """
-    pass
 
 class DatedSubjectSpecificTests(UserList):
     """
     All results for a specific test and subject for a specific date
     """
-    pass
+    def __init__(self, initlist, subject_id, date, test_codes):
+        super().__init__(initlist)
+        self.subject_id = subject_id
+        self.date = date
+        self.test_codes = test_codes
 
-class ValidatedSubjectSpecificTest(OrderedDict):
-    """
-    A single validated result for a specific test and subject for a specific date
-    """
-    pass
+    @staticmethod
+    def extract_specific_tests_with_date(data: SubjectTests, test_codes, search_date: dt.date) -> "DatedSubjectSpecificTests":
+        """
+        Parse date and then extract rows matching a specific search_date
+        :param data:
+        :param search_date:
+        :return:
+        """
+        test_data = list(filter(lambda x: x[config.RESULT_TEST_CODE_FIELD] in test_codes, data))
+        search_date_str = search_date.strftime(config.DATE_OUTPUT_FORMAT)
+        parsed_row = [_parse_date_field(row) for row in test_data]
+        dated_rows = list(filter(lambda x: x[config.PARSED_RESULT_DATE_FIELD] == search_date_str, parsed_row))
+        return DatedSubjectSpecificTests(dated_rows, data.subject_id, search_date, test_codes)
 
 
-def extract_subject_tests(data:List[Dict[str,str]], subject_id:str)->SubjectTests:
+class BaseValidatedTest:
     """
-    Extract all rows which match the supplied subject ID
-    :param data:
-    :param subject_id:
-    :return:
+    Base class for a validated test, the derived class is either ValidatedResultTest or ValidatedEmptyTest
     """
-    return SubjectTests(list(filter(lambda x: x.get(config.STUDY_ID_FIELD) == subject_id, data)))
+    def __init__(self, data:DatedSubjectSpecificTests):
+        self.subject_id = data.subject_id
+        self.test_date = data.date
 
-def parse_subject_tests_date(data:SubjectSpecificTests)->ParsedSubjectSpecificTests:
-    """
-    Parse the test date according to the config.RESULT_DATE_FORMAT into the output format config.DATE_OUTPUT_FORMAT
-    :param data:
-    :return:
-    """
-    return ParsedSubjectSpecificTests([_parse_date_field(row) for row in data])
+    @property
+    def result(self):
+        raise NotImplementedError()
 
-def extract_rows_with_date(data:ParsedSubjectSpecificTests, search_date:dt.date)->DatedSubjectSpecificTests:
-    """
-    Extract rows matching a specific search_date
-    :param data:
-    :param search_date:
-    :return:
-    """
-    search_date_str = search_date.strftime(config.DATE_OUTPUT_FORMAT)
-    return DatedSubjectSpecificTests(list(filter(lambda x: x.get(config.DATE_FIELD) == search_date_str, data)))
+    @property
+    def unobtainable_status(self):
+        raise NotImplementedError()
 
-def extract_specific_tests(data:SubjectTests, test_code:str)->SubjectSpecificTests:
-    """
-    Extract specific tests with the supplied test_code
-    :param data:
-    :param test_code:
-    :return:
-    """
-    filt = filter(lambda x: x[config.TEST_CODE_FIELD] == test_code, data)
-    return SubjectSpecificTests(list(filt))
 
-def validate_rows(data:DatedSubjectSpecificTests)->ValidatedSubjectSpecificTest:
+    result = None
+
+def validate_rows(data:DatedSubjectSpecificTests, test_info:"macroload.core.TestInfo")->ValidatedSubjectSpecificTest:
     """
     Validate the row by raising exceptions for inconsistent and/or empty results. If it is successful it returns a single validated test
     :param data:
@@ -84,35 +77,44 @@ def validate_rows(data:DatedSubjectSpecificTests)->ValidatedSubjectSpecificTest:
         results[row[config.RESULT_FIELD]] = True
 
     if len(results.items())>1:
-        raise InconsistentResults("In result:" + str(data))
+        data = {
+            "date_time":[i[config.RESULT_DATE_FIELD] for i in data],
+            "test":[i[config.RESULT_TEST_CODE_FIELD] for i in data],
+            "study_id":[i[config.RESULT_STUDY_ID_FIELD] for i in data],
+            "result":[i[config.RESULT_FIELD] for i in data]
+        }
+        raise InconsistentResults("Inconsistent results in:" + str(data))
 
     if len(results.items())==0:
-        raise NoResults()
+        return ValidatedUnobtainableTest(data)
 
-    row = data[0]
+    _guard_against_invalid_number(row[config.RESULT_FIELD], test_info.min, test_info.max)
 
-    if not _is_number_or_prefixed_number(row[config.RESULT_FIELD]):
-        raise NonNumericResult("In result:" + str(data))
-
-    return ValidatedSubjectSpecificTest(data[0])
+    return ValidatedResultTest(row)
 
 def _parse_date_field(row:Dict[str,str])->Dict[str,str]:
-    parsed_date = dt.datetime.strptime(row[config.DATE_FIELD], config.RESULT_DATE_FORMAT)
+    parsed_date = dt.datetime.strptime(row[config.RESULT_DATE_FIELD], config.RESULT_DATE_FORMAT)
     new_row = row.copy()
-    new_row[config.DATE_FIELD] = parsed_date.strftime(config.DATE_OUTPUT_FORMAT)
+    new_row[config.PARSED_RESULT_DATE_FIELD] = parsed_date.strftime(config.DATE_OUTPUT_FORMAT)
     return new_row
 
-def _is_number_or_prefixed_number(result:str):
+def _guard_against_invalid_number(result:str, min:Optional[float], max:Optional[float]):
     if result is None:
-        return False
+        raise error.NonNumericResult("Result is None")
 
     result = str(result)
 
     if result.startswith(">") or result.startswith("<"):
         result = result[1:]
     try:
-        float(result)
-    except ValueError:
-        return False
+        num_result = float(result)
 
-    return True
+        print("min:%s, max:%s, result:%s" % (min,max, num_result))
+        if min and num_result<min:
+            raise error.NumberOutOfRange("Result %s less than minimum (%s)" % (num_result, min))
+
+        if max and num_result>max:
+            raise error.NumberOutOfRange("Result %s more than maximum (%s)" % (num_result, max))
+
+    except ValueError:
+        raise error.NonNumericResult("Result %s is not numeric" % result)
