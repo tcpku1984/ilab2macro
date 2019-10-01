@@ -1,4 +1,5 @@
 # lab2macro
+![](https://github.com/rcfgroup/ilab2macro/workflows/main/badge.svg)
 
 This is a simple Python 3.4+ script which uses pseudonymised lab test data to generate an output file which can be loaded into Infermed MACRO. To do this it uses three CSV-based input files:
 
