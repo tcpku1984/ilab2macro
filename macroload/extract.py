@@ -66,7 +66,57 @@ class BaseValidatedTest:
 
     result = None
 
-def validate_rows(data:DatedSubjectSpecificTests, test_info:"macroload.core.TestInfo")->ValidatedSubjectSpecificTest:
+class ValidatedResultTest(BaseValidatedTest):
+    """
+    A single validated result for a specific test and subject for a specific date
+    """
+
+    def __init__(self, data:DatedSubjectSpecificTests):
+        self._result = data[0][config.RESULT_FIELD]
+        self.test_code = data[0][config.RESULT_TEST_CODE_FIELD]
+
+        super().__init__(data)
+
+    @property
+    def result(self):
+        return self._result
+
+    @property
+    def unobtainable_status(self):
+        return ""
+
+class ValidatedUnobtainableTest(BaseValidatedTest):
+    """
+    A single unobtainable result for a specific test and subject for a specific date
+    """
+
+    def __init__(self, data:DatedSubjectSpecificTests):
+        self.test_code = data.test_codes[0]
+        super().__init__(data)
+
+    @property
+    def result(self):
+        return ""
+
+    @property
+    def unobtainable_status(self):
+        return "1"
+
+
+class InconsistentResults(BaseException):
+    """
+    Raised when two or more results of the same subject, date and test type do not match
+    """
+    pass
+
+class NoResults(BaseException):
+    """
+    Raised when no results for the subject, date and test type
+    """
+    pass
+
+
+def validate_rows(data:DatedSubjectSpecificTests)->BaseValidatedTest:
     """
     Validate the row by raising exceptions for inconsistent and/or empty results. If it is successful it returns a single validated test
     :param data:
