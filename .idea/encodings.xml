@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/macroload/test/test_set.csv" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/../lab2macro/lab2macro/test/invalid_test_set.csv" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/../lab2macro/lab2macro/test/test_set.csv" charset="US-ASCII" />
   </component>
 </project>

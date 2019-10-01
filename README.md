@@ -1,16 +1,15 @@
-# ilab2macro
-
+# lab2macro
 ![](https://github.com/rcfgroup/ilab2macro/workflows/main/badge.svg)
 
-This is a simple Python 3.4+ script which uses pseudonymised ILAB test data to generate an output file which can be loaded into Infermed MACRO. To do this it uses three CSV-based input files:
+This is a simple Python 3.4+ script which uses pseudonymised lab test data to generate an output file which can be loaded into Infermed MACRO. To do this it uses three CSV-based input files:
 
 - visits: (fields arranged as Participant ID,Screening Number,Visit number,Visit date)
-- test set: (fields most contain test_code,var_code)
+- test set: (fields most contain lab test_code, macro var_code, min (optional) and max (optional))
 - test data: (fields can be configured by changing the `config.py` file)
 
 The script is run by using:
 
-`generate-macro-file.py`
+`lab2macro.py`
 
 The parameters are:
 ```
@@ -19,7 +18,7 @@ The parameters are:
                  [required]
   --tests PATH   Name of test set file in CSV format (fields most contain
                  test_code,var_code)  [required]
-  --data PATH    Name of input data file in CSV format (fields can be
+  --data PATH    Name of input data file in tab-delimited format (fields can be
                  configured by changing the `config.py` file)  [required]
   --output TEXT  Output file for MACRO data  [required]
   --help         Show this message and exit.
