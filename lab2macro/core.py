@@ -1,10 +1,12 @@
-from lab2macro import extract, process, config, data
+from lab2macro import extract, process, config
 from typing import Dict,List, Any
 from datetime import datetime as dt
 
-from lab2macro.data import SubjectVisitDetails, ValidatedSubjectRows
+from lab2macro.data import SubjectVisitDetails, ValidatedSubjectRows, TestMap, TestInfo
+from lab2macro.error import TestError
 
-def extract_validated_visit_tests(data:List[Dict[str,Any]], visit: SubjectVisitDetails, test_map:data.TestMap)-> ValidatedSubjectRows:
+
+def extract_validated_visit_tests(data:List[Dict[str,Any]], visit: SubjectVisitDetails, test_map:TestMap)-> ValidatedSubjectRows:
     """
     Extract and validates test rows (based on test map) from data for specific subject visit.
     :param data:
@@ -17,18 +19,19 @@ def extract_validated_visit_tests(data:List[Dict[str,Any]], visit: SubjectVisitD
     validated_rows = []
     errors = []
     for macro_field, test_info in test_map.items():
+        
+        dated_tests = extract.DatedSubjectSpecificTests.extract_specific_tests_with_date(subject_tests, test_info, visit.visit_date)
+
         try:
             validated_rows.append(
-                _extract_validated_test_row(subject_tests, test_info, visit)
+                _extract_validated_test_row(dated_tests, test_info, visit)
             )
         except BaseException as ex:
-            errors.append(ex)
+            errors.append(TestError(ex, dated_tests))
 
     return ValidatedSubjectRows(validated_rows, errors)
 
-def _extract_validated_test_row(subject_tests, test_info: data.TestInfo, visit):
-    dated_tests = extract.DatedSubjectSpecificTests.extract_specific_tests_with_date(subject_tests, test_info, visit.visit_date)
-
+def _extract_validated_test_row(dated_tests:extract.DatedSubjectSpecificTests, test_info: TestInfo, visit):
     validated_rows = extract.validate_rows(dated_tests)
 
     processed_row = process.create_processed_row(validated_rows, visit, test_info)

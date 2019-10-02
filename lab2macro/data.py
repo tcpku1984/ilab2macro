@@ -13,6 +13,11 @@ class SubjectVisitDetails:
     visit_no = attr.ib() #type: str
     visit_date = attr.ib() #type: dt.date
 
+    def __str__(self):
+        return "study:%s, visit:%s, date:%s" % (self.study_id, self.visit_no, self.visit_date.strftime("%Y-%m-%d"))
+
+    def __repr__(self):
+        return self.__str__()
 
 @attr.s
 class TestInfo:

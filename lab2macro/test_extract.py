@@ -1,7 +1,7 @@
 import pytest
 
 import lab2macro.data
-from lab2macro import extract, core, error, result
+from lab2macro import extract, error, data
 import datetime as dt
 import logging as l
 
@@ -208,6 +208,38 @@ def test_it_raises_exception_during_validation_if_text_value():
 
     with pytest.raises(error.NonNumericResult):
         extract.validate_rows(input_data)
+
+def test_it_returns_numeric_result_if_text_result_then_numeric_result():
+    input_data = extract.DatedSubjectSpecificTests([
+        {"study_id": "12345", "sample_collection_date_time": "02/03/2013", "local_test_code": "EOSAB",
+         "result": "POS"},
+        {"study_id": "12345", "sample_collection_date_time": "02/03/2013", "local_test_code": "EOSAB",
+         "result": "0.2"}
+    ],STUDY_ID, TEST_DATE, lab2macro.data.TestInfo("eosinophil", ["EOSAB"], 0, 1))
+
+    obs_row = extract.validate_rows(input_data)
+
+    assert obs_row.subject_id == STUDY_ID
+    assert obs_row.test_code == TEST_CODE
+    assert obs_row.test_date == TEST_DATE
+    assert obs_row.result == "0.2"
+    assert obs_row.unobtainable_status == ""
+
+def test_it_returns_numeric_result_if_numeric_result_then_text_result():
+    input_data = extract.DatedSubjectSpecificTests([
+        {"study_id": "12345", "sample_collection_date_time": "02/03/2013", "local_test_code": "EOSAB",
+         "result": "0.5"},
+        {"study_id": "12345", "sample_collection_date_time": "02/03/2013", "local_test_code": "EOSAB",
+         "result": "POS"},
+    ],STUDY_ID, TEST_DATE, lab2macro.data.TestInfo("eosinophil", ["EOSAB"], 0, 1))
+
+    obs_row = extract.validate_rows(input_data)
+
+    assert obs_row.subject_id == STUDY_ID
+    assert obs_row.test_code == TEST_CODE
+    assert obs_row.test_date == TEST_DATE
+    assert obs_row.result == "0.5"
+    assert obs_row.unobtainable_status == ""
 
 
 def test_it_raises_exception_during_validation_if_empty_value():

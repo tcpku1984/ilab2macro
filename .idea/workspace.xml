@@ -2,9 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74e6a379-dd88-4aba-b129-ab51c632eea4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/lab2macro.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lab2macro.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2macro/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2macro/core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2macro/data.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2macro/data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2macro/error.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2macro/error.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2macro/extract.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2macro/extract.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2macro/load.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2macro/load.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2macro/process.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2macro/process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2macro/test_core.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2macro/test_core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2macro/test_extract.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2macro/test_extract.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2macro/test_load.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2macro/test_load.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab2macro/test_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab2macro/test_process.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +34,7 @@
     <SUITE FILE_PATH="coverage/macroload$py_test_for_test_core_test_extract_subject_visit_tests_works_with_no_errors.coverage" NAME="py.test for test_core.test_extract_subject_visit_tests_works_with_no_errors Coverage Results" MODIFIED="1553095699213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
     <SUITE FILE_PATH="coverage/macroload$py_test_for_test_process_test_create_output_row.coverage" NAME="py.test for test_process.test_create_output_row Coverage Results" MODIFIED="1553096656828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
     <SUITE FILE_PATH="coverage/macroload$py_test_for_test_extract_test_it_raises_exception_during_validation_if_above_max_value.coverage" NAME="py.test for test_extract.test_it_raises_exception_during_validation_if_above_max_value Coverage Results" MODIFIED="1569849533344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/lab2macro$pytest_in_lab2macro.coverage" NAME="py.test in lab2macro Coverage Results" MODIFIED="1569936565926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab2macro" />
     <SUITE FILE_PATH="coverage/macroload$py_test_for_test_process_test_validate_output_row_returns_validated_row.coverage" NAME="py.test for test_process.test_validate_output_row_returns_validated_row Coverage Results" MODIFIED="1553093836436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
     <SUITE FILE_PATH="coverage/macroload$py_test_in_test_core_py.coverage" NAME="py.test in test_core.py Coverage Results" MODIFIED="1553249699965" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
     <SUITE FILE_PATH="coverage/macroload$py_test_for_test_extract_test_it_returns_empty_test_if_no_values.coverage" NAME="py.test for test_extract.test_it_returns_empty_test_if_no_values Coverage Results" MODIFIED="1553247353300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
@@ -44,25 +58,39 @@
     <SUITE FILE_PATH="coverage/macroload$py_test_for_test_extract_test_it_returns_single_test_if_single_row.coverage" NAME="py.test for test_extract.test_it_returns_single_test_if_single_row Coverage Results" MODIFIED="1553092092455" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
     <SUITE FILE_PATH="coverage/macroload$load.coverage" NAME="load Coverage Results" MODIFIED="1552551507839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/macroload$py_test_for_test_extract_test_it_allows_large_number_if_no_maximum.coverage" NAME="py.test for test_extract.test_it_allows_large_number_if_no_maximum Coverage Results" MODIFIED="1569848829339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/lab2macro$py_test_in_lab2macro.coverage" NAME="py.test in lab2macro Coverage Results" MODIFIED="1570013032537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab2macro" />
     <SUITE FILE_PATH="coverage/macroload$py_test_in_test_load_py.coverage" NAME="py.test in test_load.py Coverage Results" MODIFIED="1552552102063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
     <SUITE FILE_PATH="coverage/macroload$py_test_for_test_extract_test_it_returns_number_if_gt_sign_in_front.coverage" NAME="py.test for test_extract.test_it_returns_number_if_gt_sign_in_front Coverage Results" MODIFIED="1569312354721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
+    <SUITE FILE_PATH="coverage/lab2macro$py_test_in_test_extract_py.coverage" NAME="py.test in test_extract.py Coverage Results" MODIFIED="1570012559727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/lab2macro" />
     <SUITE FILE_PATH="coverage/macroload$py_test_for_test_extract_test_it_raises_exception_during_validation_if_no_values.coverage" NAME="py.test for test_extract.test_it_raises_exception_during_validation_if_no_values Coverage Results" MODIFIED="1553090473483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="core.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab2macro/core.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+            <state relative-caret-position="180">
+              <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#59#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="error.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab2macro/error.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_data.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab2macro/test_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
+            <state relative-caret-position="575">
               <caret line="38" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -71,29 +99,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.github/workflows/main.yaml">
+      <file leaf-file-name="data.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab2macro/data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+            <state relative-caret-position="272">
+              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab2macro/test/visits.csv">
+      <file leaf-file-name="extract.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab2macro/extract.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab2macro/test_load.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+            <state relative-caret-position="90">
+              <caret line="69" column="12" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -101,19 +123,34 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab2macro/config.py">
+      <file leaf-file-name="test_core.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab2macro/test_core.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+            <state relative-caret-position="50">
+              <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="load.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab2macro/load.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="57" column="51" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="51" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="result.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lab2macro/result.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="874">
+            <state relative-caret-position="234">
               <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
@@ -122,23 +159,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.flake8">
+      <file leaf-file-name="test_extract.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lab2macro/test_extract.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            <state relative-caret-position="17">
+              <caret line="211" column="54" selection-start-line="211" selection-start-column="54" selection-end-line="211" selection-end-column="54" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lab2macro/test_extract.py">
+      <file leaf-file-name="process.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lab2macro/process.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1881">
-              <caret line="99" column="130" selection-start-line="99" selection-start-column="130" selection-end-line="99" selection-end-column="130" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="731">
+              <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -154,7 +191,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>:</find>
       <find>eosinophil</find>
       <find>&quot;2013-03-02&quot;</find>
       <find>dialect</find>
@@ -183,6 +219,8 @@
       <find>macroload</find>
       <find>macroload.data.</find>
       <find>test2</find>
+      <find>print</find>
+      <find />
     </findStrings>
     <replaceStrings>
       <replace>,</replace>
@@ -202,6 +240,7 @@
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
       <dir>$PROJECT_DIR$/lab2macro</dir>
+      <dir>G:\Projects\lab2macro\lab2macro</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -244,18 +283,35 @@
         <option value="$PROJECT_DIR$/macroload/config.py" />
         <option value="$PROJECT_DIR$/macroload/test_load.py" />
         <option value="$PROJECT_DIR$/macroload/.flake8" />
-        <option value="$PROJECT_DIR$/lab2macro/core.py" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.github/workflows/main.yaml" />
+        <option value="$PROJECT_DIR$/lab2macro/process.py" />
+        <option value="$PROJECT_DIR$/lab2macro/test_core.py" />
+        <option value="$PROJECT_DIR$/lab2macro/test_load.py" />
+        <option value="$PROJECT_DIR$/lab2macro/error.py" />
+        <option value="$PROJECT_DIR$/lab2macro/core.py" />
+        <option value="$PROJECT_DIR$/lab2macro/load.py" />
+        <option value="$PROJECT_DIR$/lab2macro/data.py" />
+        <option value="$PROJECT_DIR$/lab2macro/extract.py" />
+        <option value="$PROJECT_DIR$/lab2macro/test_extract.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="453" />
-    <option name="y" value="-1033" />
-    <option name="width" value="1680" />
-    <option name="height" value="989" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -263,7 +319,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -287,16 +342,11 @@
               <item name="lab2macro" type="462c0819:PsiDirectoryNode" />
               <item name="lab2macro" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="lab2macro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lab2macro" type="462c0819:PsiDirectoryNode" />
-              <item name="lab2macro" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -336,7 +386,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in lab2macro">
+  <component name="RunManager" selected="Python tests.py.test in lab2macro">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="lab2macro" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -463,9 +513,8 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/test_extract.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
     </configuration>
-    <configuration name="pytest for lab2macro.test_load" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test for lab2macro.test_load" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="lab2macro" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -479,9 +528,8 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;lab2macro.test_load&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
     </configuration>
-    <configuration name="pytest in lab2macro" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test in lab2macro" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="lab2macro" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -495,9 +543,8 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/lab2macro&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
     </configuration>
-    <configuration name="pytest in test_core.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test in test_core.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="lab2macro" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -511,9 +558,8 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/lab2macro/test_core.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
     </configuration>
-    <configuration name="pytest in test_extract.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test in test_extract.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="lab2macro" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -527,9 +573,8 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/lab2macro/test_extract.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
     </configuration>
-    <configuration name="pytest in test_load.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test in test_load.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="lab2macro" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -543,22 +588,21 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/lab2macro/test_load.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.pytest in test_core.py" />
-      <item itemvalue="Python tests.pytest in test_load.py" />
-      <item itemvalue="Python tests.pytest for lab2macro.test_load" />
-      <item itemvalue="Python tests.pytest in test_extract.py" />
-      <item itemvalue="Python tests.pytest in lab2macro" />
+      <item itemvalue="Python tests.py.test in test_core.py" />
+      <item itemvalue="Python tests.py.test in test_load.py" />
+      <item itemvalue="Python tests.py.test for lab2macro.test_load" />
+      <item itemvalue="Python tests.py.test in test_extract.py" />
+      <item itemvalue="Python tests.py.test in lab2macro" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in lab2macro" />
-        <item itemvalue="Python tests.pytest in test_extract.py" />
-        <item itemvalue="Python tests.pytest for lab2macro.test_load" />
-        <item itemvalue="Python tests.pytest in test_load.py" />
-        <item itemvalue="Python tests.pytest in test_core.py" />
+        <item itemvalue="Python tests.py.test in lab2macro" />
+        <item itemvalue="Python tests.py.test in test_extract.py" />
+        <item itemvalue="Python tests.py.test for lab2macro.test_load" />
+        <item itemvalue="Python tests.py.test in test_load.py" />
+        <item itemvalue="Python tests.py.test in test_core.py" />
       </list>
     </recent_temporary>
   </component>
@@ -578,70 +622,73 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_macroload - 2019.10.01 at 12h 43m 25s.xml">
-      <configuration name="pytest in macroload" configurationId="tests" />
+    <history-entry file="py_test_in_lab2macro - 2019.10.01 at 14h 21m 21s.xml">
+      <configuration name="py.test in lab2macro" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_macroload - 2019.10.01 at 12h 44m 23s.xml">
-      <configuration name="pytest in macroload" configurationId="tests" />
+    <history-entry file="py_test_in_lab2macro - 2019.10.01 at 14h 21m 29s.xml">
+      <configuration name="py.test in lab2macro" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_macroload - 2019.10.01 at 12h 45m 14s.xml">
-      <configuration name="pytest in macroload" configurationId="tests" />
+    <history-entry file="py_test_in_lab2macro - 2019.10.01 at 14h 22m 42s.xml">
+      <configuration name="py.test in lab2macro" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_macroload - 2019.10.01 at 12h 46m 04s.xml">
-      <configuration name="pytest in macroload" configurationId="tests" />
+    <history-entry file="py_test_in_lab2macro - 2019.10.01 at 14h 27m 41s.xml">
+      <configuration name="py.test in lab2macro" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_macroload - 2019.10.01 at 12h 47m 44s.xml">
-      <configuration name="pytest in macroload" configurationId="tests" />
+    <history-entry file="py_test_in_lab2macro - 2019.10.01 at 14h 29m 32s.xml">
+      <configuration name="py.test in lab2macro" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_macroload - 2019.10.01 at 12h 48m 58s.xml">
-      <configuration name="pytest in macroload" configurationId="tests" />
+    <history-entry file="py_test_in_test_extract_py - 2019.10.02 at 11h 30m 47s.xml">
+      <configuration name="py.test in test_extract.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_macroload - 2019.10.01 at 12h 49m 54s.xml">
-      <configuration name="pytest in macroload" configurationId="tests" />
+    <history-entry file="py_test_in_test_extract_py - 2019.10.02 at 11h 31m 18s.xml">
+      <configuration name="py.test in test_extract.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_macroload - 2019.10.01 at 12h 52m 37s.xml">
-      <configuration name="pytest in macroload" configurationId="tests" />
+    <history-entry file="py_test_in_test_extract_py - 2019.10.02 at 11h 32m 28s.xml">
+      <configuration name="py.test in test_extract.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_lab2macro - 2019.10.01 at 13h 07m 17s.xml">
-      <configuration name="pytest in lab2macro" configurationId="tests" />
+    <history-entry file="py_test_in_test_extract_py - 2019.10.02 at 11h 36m 02s.xml">
+      <configuration name="py.test in test_extract.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_lab2macro - 2019.10.01 at 13h 08m 33s.xml">
-      <configuration name="pytest in lab2macro" configurationId="tests" />
+    <history-entry file="py_test_in_lab2macro - 2019.10.02 at 11h 36m 36s.xml">
+      <configuration name="py.test in lab2macro" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="9927000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="453" y="-1033" width="1680" height="989" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21785714" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3267974" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33333334" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39869282" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.2658228" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.37974682" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1500732" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39869282" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="PlantUML" order="5" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3267974" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -650,11 +697,6 @@
           <url>file://$PROJECT_DIR$/lab2macro/test_extract.py</url>
           <line>136</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/lab2macro/extract.py</url>
-          <line>45</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -680,6 +722,30 @@
     <SUITE FILE_PATH="coverage/macroload$pytest_for_test_extract_test_it_allows_exact_number_if_maximum.coverage" NAME="pytest for test_extract.test_it_allows_exact_number_if_maximum Coverage Results" MODIFIED="1569924471767" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/macroload" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.flake8">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2macro/test_extract.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1598">
+          <caret line="99" column="130" selection-start-line="99" selection-start-column="130" selection-end-line="99" selection-end-column="130" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.github/workflows/main.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config.py" />
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.1/python_stubs/-321037632/builtins.py" />
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/pandas/io/parsers.py" />
@@ -695,13 +761,7 @@
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/click/decorators.py" />
     <entry file="file://$PROJECT_DIR$/output_file.csv" />
     <entry file="file://$PROJECT_DIR$/macroload.log" />
-    <entry file="file://$PROJECT_DIR$/lab2macro/test/test2/output_file.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2macro/test/test2/output_file.csv" />
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -718,37 +778,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/_pytest/python.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="165" selection-start-line="165" selection-end-line="165" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/pluggy/callers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="186" selection-start-line="186" selection-end-line="186" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/pluggy/manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab2macro/test_process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
-          <folding>
-            <element signature="e#1#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/_pytest/python.py" />
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/pluggy/callers.py" />
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/pluggy/manager.py" />
     <entry file="file://$PROJECT_DIR$/macroload/test/invalid_test_set.csv" />
     <entry file="file://$PROJECT_DIR$/lab2macro/test/test_data.csv">
       <provider selected="true" editor-type-id="text-editor">
@@ -771,26 +803,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab2macro/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/typing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="1205" column="4" selection-start-line="1205" selection-start-column="4" selection-end-line="1205" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab2macro/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/typing.py" />
     <entry file="file://$PROJECT_DIR$/mypy.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -798,47 +811,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab2macro/process.py">
+    <entry file="file://$PROJECT_DIR$/lab2macro/test/visits.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+        <state relative-caret-position="102">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2macro/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.flake8">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.github/workflows/main.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2macro/test/output_file.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2macro/test_process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="57" column="31" lean-forward="true" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2macro/test_load.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
           <folding>
-            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#1#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab2macro/extract.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda3/Lib/logging/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+        <state relative-caret-position="98">
+          <caret line="1403" column="8" selection-start-line="1403" selection-start-column="8" selection-end-line="1403" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2macro/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2macro/test_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lab2macro/error.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
+        <state relative-caret-position="238">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lab2macro/test_core.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="103" selection-start-line="103" selection-end-line="103" />
+        <state relative-caret-position="50">
+          <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lab2macro/process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab2macro/result.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lab2macro/load.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        <state relative-caret-position="246">
+          <caret line="57" column="51" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="51" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
@@ -847,94 +939,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lab2macro/core.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="20" column="34" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+        <state relative-caret-position="180">
+          <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab2macro/test/visits.csv">
+    <entry file="file://$PROJECT_DIR$/lab2macro/extract.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab2macro/test_load.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+        <state relative-caret-position="90">
+          <caret line="69" column="12" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab2macro/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="27" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab2macro/result.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.flake8">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lab2macro/test_extract.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1881">
-          <caret line="99" column="130" selection-start-line="99" selection-start-column="130" selection-end-line="99" selection-end-column="130" />
+        <state relative-caret-position="17">
+          <caret line="211" column="54" selection-start-line="211" selection-start-column="54" selection-end-line="211" selection-end-column="54" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/setuptools.pth">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="95">
-            <caret line="2" column="190" lean-forward="true" selection-start-line="2" selection-start-column="190" selection-end-line="2" selection-end-column="190" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab2macro/test_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.github/workflows/main.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
         </state>
       </provider>
     </entry>

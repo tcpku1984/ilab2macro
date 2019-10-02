@@ -7,6 +7,7 @@ import logging
 from collections import OrderedDict
 
 l = logging.getLogger("load")
+import hashlib
 
 class OutputFile:
     """
@@ -22,7 +23,7 @@ class OutputFile:
                 return
             logging.info("Create output file %s" % self.filename)
 
-            self._file = open(self.filename,"w")
+            self._file = open(self.filename,"w", newline='')
             self._writer = DictWriter(self._file, fieldnames = tests[0].keys())
             self._writer.writeheader()
         self._writer.writerows(tests)
@@ -31,6 +32,19 @@ class OutputFile:
         if self._file:
             self._file.close()
 
+    @property
+    def checksum(self):
+        h = hashlib.sha256()
+
+        with open(str(self.filename), 'rb') as file:
+            while True:
+                # Reading is buffered, so we can read smaller chunks.
+                chunk = file.read(h.block_size)
+                if not chunk:
+                    break
+                h.update(chunk)
+
+        return h.hexdigest()
 
 def _read_csv_file(filename, delimiter=","):
     input_data = pd.read_csv(filename, sep=delimiter, na_filter=False, dtype=str)
@@ -45,7 +59,7 @@ def _process_and_write_tests(output_file:OutputFile, visit_rows:List[Dict[str,st
 
         for e in validated_tests.errors:
             if not isinstance(e, error.NoResults):
-                l.error(str(visit) + ", exception:" + e.__class__.__name__ + ", message:" + str(e))
+                l.error(str(visit) + "|" + e.error_name + "|" +  str(e))
 
         if len(validated_tests) == 0:
             l.info("Visit " + str(visit) + " had no results")

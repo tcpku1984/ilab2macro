@@ -84,7 +84,7 @@ def test_extract_validated_visit_tests_handles_invalid_field_with_non_numeric_re
     assert obs_tests.data == exp_tests
 
     assert len(obs_tests.errors) == 1
-    assert isinstance(obs_tests.errors[0],error.NonNumericResult)
+    assert isinstance(obs_tests.errors[0].error,error.NonNumericResult)
 
 def test_extract_validated_visit_tests_handles_inconsistent_results():
     test_data3 = deepcopy(test_data)
@@ -100,4 +100,4 @@ def test_extract_validated_visit_tests_handles_inconsistent_results():
     assert len(obs_tests.data) == 1
 
     assert len(obs_tests.errors) == 1
-    assert isinstance(obs_tests.errors[0],error.InconsistentResults)
+    assert isinstance(obs_tests.errors[0].error,error.InconsistentResults)

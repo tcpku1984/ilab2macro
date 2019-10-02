@@ -1,6 +1,6 @@
-import lab2macro.data
-from lab2macro import load,core
-from typing import List,Dict
+
+from lab2macro import load,core, data
+from typing import List
 import hashlib
 import os, sys
 class CheckableOutputFile(load.OutputFile):
@@ -9,7 +9,7 @@ class CheckableOutputFile(load.OutputFile):
         self.rows = [] #type: List[core.ValidatedSubjectRows]
 
 
-    def write_tests(self, tests: lab2macro.data.ValidatedSubjectRows):
+    def write_tests(self, tests: data.ValidatedSubjectRows):
         self.rows = self.rows + list(tests)
 
     @property
@@ -26,11 +26,24 @@ class CheckableOutputFile(load.OutputFile):
         # res = base64.b64encode(sha)
         return sha.hexdigest()
 
-def test_output_file_contents_matches_expected_checksum(monkeypatch):
-    #monkeypatch.setattr("lab2macro.config.")
+def test_internal_output_file_contents_matches_expected_checksum():
     base_dir = os.path.abspath(os.path.dirname(__file__))
     output_file = CheckableOutputFile(base_dir + "/test/output_file.csv")
     load.process_files(base_dir + "/test/visits.csv", base_dir + "/test/test_set.csv", base_dir + "/test/test_data.txt", output_file)
-    print("cryptohash","\n".join([str(r) for r in output_file.rows]))
+    
     assert "e7552eb509506ce36b967d1888e2831a8e0c7d0ee2e449c110a21f6f97be0d57" == output_file.checksum
 
+def test_real_output_file_matches_checksum():
+    import os
+
+    base_dir = os.path.abspath(os.path.dirname(__file__))
+
+    output_file = load.OutputFile(base_dir + "/test/output_file.csv")
+
+    try:
+        os.unlink(output_file.filename)
+    except FileNotFoundError:
+        pass
+
+    load.process_files(base_dir + "/test/visits.csv", base_dir + "/test/test_set.csv", base_dir + "/test/test_data.txt",output_file)
+    assert "2565d98e5209f0697d2edf10cc8e886b362f9fb91f89630515b848dd6d8d6ccb" == output_file.checksum

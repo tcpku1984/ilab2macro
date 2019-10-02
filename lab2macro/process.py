@@ -1,7 +1,7 @@
 from lab2macro import config, core, result, data
 
 from collections import OrderedDict
-from lab2macro.error import NotNoneableField
+from lab2macro.error import RequiredField
 
 
 class ProcessedRow(OrderedDict):
@@ -44,6 +44,6 @@ def validate_required_fields(row:ProcessedRow)->ValidatedRow:
     """
     for x in ["Question Code", "Visit Date", "Question Cycle","Question Value","Subject ID","Visit Code"]:
         if row.get(x) is None:
-            raise NotNoneableField("'" + x + "' cannot be none")
+            raise RequiredField(x)
 
     return ValidatedRow(row)

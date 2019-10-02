@@ -1,5 +1,5 @@
 import datetime as dt
-from typing import List, Dict, Optional
+from typing import List, Dict, Optional, Tuple
 from collections import UserList
 from lab2macro.data import TestInfo
 
@@ -56,31 +56,50 @@ def validate_rows(data:DatedSubjectSpecificTests)-> BaseValidatedResult:
     :param data:
     :return:
     """
+
+    clean_data, num_string_results = _remove_string_data(data)
+
     results = {}
-    for row in data:
+
+    for row in clean_data:
         results[row[config.RESULT_FIELD]] = True
 
-    if len(results.items())>1:
-        ex_data = {
-            "date_time":[i[config.RESULT_DATE_FIELD] for i in data],
-            "test":[i[config.RESULT_TEST_CODE_FIELD] for i in data],
-            "study_id":[i[config.RESULT_STUDY_ID_FIELD] for i in data],
-            "result":[i[config.RESULT_FIELD] for i in data]
-        }
-        raise error.InconsistentResults("Inconsistent results in:" + str(ex_data))
+    if len(results.items()) == 0:
+       if num_string_results > len(results):
+           raise error.NonNumericResult()
+       else:
+           return ValidatedUnobtainableTest(data)
 
-    if len(results.items())==0:
-        return ValidatedUnobtainableTest(data)
+    if len(results.items()) > 1:
+            raise error.InconsistentResults()
 
-    _guard_against_invalid_number(data[0][config.RESULT_FIELD], data.test_info.min, data.test_info.max)
+    _guard_against_invalid_number(clean_data[0][config.RESULT_FIELD], clean_data.test_info.min, clean_data.test_info.max)
 
-    return ValidatedResult(data)
+    return ValidatedResult(clean_data)
 
 def _parse_date_field(row:Dict[str,str])->Dict[str,str]:
     parsed_date = dt.datetime.strptime(row[config.RESULT_DATE_FIELD], config.RESULT_DATE_FORMAT)
     new_row = row.copy()
     new_row[config.RESULT_PARSED_DATE_FIELD] = parsed_date.strftime(config.OUTPUT_DATE_FORMAT)
     return new_row
+
+def _remove_string_data(data:DatedSubjectSpecificTests)->Tuple[DatedSubjectSpecificTests,int]:
+    clean_data = []
+
+    num_strings = 0
+    for item in data:
+        result = str(item[config.RESULT_FIELD])
+
+        if result.startswith(">") or result.startswith("<"):
+            result = result[1:]
+
+        try:
+            float(result)
+            clean_data.append(item)
+        except ValueError:
+            num_strings+=1
+
+    return DatedSubjectSpecificTests(clean_data,data.subject_id, data.date, data.test_info)  , num_strings
 
 def _guard_against_invalid_number(result:str, min:Optional[float], max:Optional[float]):
     if result is None:
@@ -90,15 +109,12 @@ def _guard_against_invalid_number(result:str, min:Optional[float], max:Optional[
 
     if result.startswith(">") or result.startswith("<"):
         result = result[1:]
-    try:
-        num_result = float(result)
 
-        print("min:%s, max:%s, result:%s" % (min,max, num_result))
-        if min and num_result<min:
-            raise error.NumberOutOfRange("Result %s less than minimum (%s)" % (num_result, min))
+    num_result = float(result)
 
-        if max and num_result>max:
-            raise error.NumberOutOfRange("Result %s more than maximum (%s)" % (num_result, max))
+    if min and num_result<min:
+        raise error.NumberOutOfRange("Result %s less than minimum (%s)" % (num_result, min))
 
-    except ValueError:
-        raise error.NonNumericResult("Result %s is not numeric" % result)
+    if max and num_result>max:
+        raise error.NumberOutOfRange("Result %s more than maximum (%s)" % (num_result, max))
+

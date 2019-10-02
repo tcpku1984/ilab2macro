@@ -54,7 +54,7 @@ def test_validate_output_row_raises_exception_if_no_result():
         "Question Cycle": None
     })
 
-    with pytest.raises(error.NotNoneableField):
+    with pytest.raises(error.RequiredField):
         process.validate_required_fields(process.ProcessedRow(row))
 
 def test_validate_output_row_raises_exception_if_no_code():
@@ -69,7 +69,7 @@ def test_validate_output_row_raises_exception_if_no_code():
         "Question Value": 0.06
     })
 
-    with pytest.raises(error.NotNoneableField):
+    with pytest.raises(error.RequiredField):
         process.validate_required_fields(process.ProcessedRow(row))
 
 def test_validate_output_row_returns_validated_row():
