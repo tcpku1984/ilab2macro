@@ -45,8 +45,12 @@ class DatedSubjectSpecificTests(UserList):
         """
         test_data = list(filter(lambda x: x[config.RESULT_TEST_CODE_FIELD] in test_info.test_codes, data))
         search_date_str = search_date.strftime(config.OUTPUT_DATE_FORMAT)
+        import datetime
+        search_date_start=datetime.datetime.strptime(search_date_str,config.OUTPUT_DATE_FORMAT).date()
         parsed_row = [_parse_date_field(row) for row in test_data]
-        dated_rows = list(filter(lambda x: x[config.RESULT_PARSED_DATE_FIELD] == search_date_str, parsed_row))
+
+        dated_rows = list(filter(lambda x: search_date_start<=datetime.datetime.strptime(x[config.RESULT_PARSED_DATE_FIELD],config.OUTPUT_DATE_FORMAT).date() <= search_date_start+datetime.timedelta(days=config.VISIT_THRESHOLD), parsed_row))
+        # dated_rows = list(filter(lambda x: x[config.RESULT_PARSED_DATE_FIELD] == search_date_str, parsed_row))
         return DatedSubjectSpecificTests(dated_rows, data.subject_id, search_date, test_info)
 
 

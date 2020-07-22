@@ -33,5 +33,6 @@ VISIT_DATE_FORMAT="%Y-%m-%d"
 VISIT_DATE_FIELD='Visit date'
 VISIT_STUDY_ID_FIELD = 'Participant ID'
 VISIT_NO_FIELD = 'Visit number'
+VISIT_THRESHOLD = 1
 
 OUTPUT_DATE_FORMAT="%d/%m/%Y"

@@ -30,8 +30,7 @@ def test_internal_output_file_contents_matches_expected_checksum():
     base_dir = os.path.abspath(os.path.dirname(__file__))
     output_file = CheckableOutputFile(base_dir + "/test/output_file.csv")
     load.process_files(base_dir + "/test/visits.csv", base_dir + "/test/test_set.csv", base_dir + "/test/test_data.txt", output_file)
-    
-    assert "e7552eb509506ce36b967d1888e2831a8e0c7d0ee2e449c110a21f6f97be0d57" == output_file.checksum
+    assert "a0e393e76a78b719d80c732996d46225feea8fa08dda2c2b65fcfa9969439093" == output_file.checksum
 
 def test_real_output_file_matches_checksum():
     import os
@@ -46,4 +45,4 @@ def test_real_output_file_matches_checksum():
         pass
 
     load.process_files(base_dir + "/test/visits.csv", base_dir + "/test/test_set.csv", base_dir + "/test/test_data.txt",output_file)
-    assert "2565d98e5209f0697d2edf10cc8e886b362f9fb91f89630515b848dd6d8d6ccb" == output_file.checksum
+    assert "ab678f592032e3b872191fc1e4b822c0f650c0b12b962f483f43d503b1ea4095" == output_file.checksum
